@@ -22,16 +22,10 @@ const createFareMultiplier = (multiplier) => {
 }
 
 // doubles fares
-const fareDoubler = (fare) => {
-    fare *= 2
-    return fare
-}
+const fareDoubler = createFareMultiplier(2)
 
 // triples fares
-const fareTripler = (fare) => {
-    fare *= 3
-    return fare
-}
+const fareTripler = createFareMultiplier(3)
 
 // returns the last two drivers when passed returnLastTwoDrivers() as the second argument
 const selectDifferentDrivers = (array, returnFirstTwoDrivers) => {
